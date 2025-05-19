@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="card" style="width: 60%;">
+            <div class="card-body">
+                <% if (success_msg && success_msg.length > 0) { %>
+                    <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+                        <%= success_msg %>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <% } %>
+                        <% if (error_msg && error_msg.length > 0) { %>
+                            <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+                                <%= error_msg %>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            <% } %>
+                                <h2>Register</h2>
+                                <form action="/register" method="POST" id="registerForm">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" name="username" id="registerEmail" required /> <small id="registerEmailError" class="text-danger d-none">Please enter a valid email.</small>
+                                        <p>Please enter the email in correct format.</p>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" name="password" required /> </div>
+                                    <button type="submit" class="btn btn-dark mt-3">Register</button>
+                                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
+            const emailInput = document.getElementById('registerEmail');
+            const emailError = document.getElementById('registerEmailError');
+            const emailValue = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailValue)) {
+                event.preventDefault();
+                emailError.classList.remove('d-none');
+            }
+            else {
+                emailError.classList.add('d-none');
+            }
+        });
+    </script>
+    <%- include('partials/footer') %>
