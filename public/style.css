@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 0 20px;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+h1,
+h2 {
+    color: #3f51b5;
+    text-align: center;
+}
+
+form {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.collapsible-title {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #eef1f7;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible-title:hover {
+    background-color: #e0e7ff;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.collapsible-content.show {
+    display: block;
+}
+
+.highlight {
+    border: 2px solid #ff9800 !important;
+    background-color: #fff8e1 !important;
+    animation: glow 1s ease-in-out 2;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0px rgba(255, 152, 0, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(255, 152, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 0px rgba(255, 152, 0, 0.6);
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+    input,
+    button {
+        font-size: 14px;
+    }
+    .collapsible-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
