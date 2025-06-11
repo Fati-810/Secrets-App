@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+    <div class="container mt-5">
+        <!-- Flash messages -->
+        <% if (success_msg && success_msg.length > 0) { %>
+            <div class="alert alert-success alert-dismissible fade show mt-4 text-center" role="alert">
+                <%= success_msg %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>
+                <% if (error_msg && error_msg.length > 0) { %>
+                    <div class="alert alert-danger alert-dismissible fade show mt-4 text-center" role="alert">
+                        <%= error_msg %>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <% } %>
+                        <!-- Submit Secret Form -->
+                        <div class="jumbotron centered"> <i class="fas fa-key fa-6x"></i>
+                            <h1 class="display-3">Secrets</h1>
+                            <p class="secret-text">Don't keep your secrets, share them anonymously!</p>
+                            <form action="/submit" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?" /> </div>
+                                <button type="submit" class="btn btn-dark mt-3">Submit</button>
+                            </form>
+                        </div>
+    </div>
+    <%- include('partials/footer') %>
