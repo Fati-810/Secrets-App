@@ -1,0 +1,68 @@
+# Secrest App
+
+Secrets App is a secure and simple web application where users can register, log in, and anonymously submit secrets. Users can also edit and delete their own secrets while viewing secrets submitted by others. The app provides a fun and private way to share thoughts anonymously, with a clean and responsive Bootstrap UI.
+
+# Features Overview
+
+🧑‍💻 User Management
+
+User Registration with email & password.
+
+User Login with session-based authentication.
+
+Logout functionality.
+
+🔐 Secret Sharing
+
+Submit secrets anonymously after login.
+
+View a list of all secrets shared by users.
+
+Each user can edit and delete their own secrets.
+
+Secrets are stored privately in the user’s document in MongoDB.
+
+💬 Flash Messaging
+
+Flash messages for success/failure in login, registration, secret submission, edit, delete, and logout.
+
+Auto-dismiss of flash messages after 5 seconds.
+
+🖼️ UI / UX
+
+Responsive design using Bootstrap 5.
+
+Styled components for secrets with hover effects.
+
+Forms for register, login, submit, and edit.
+
+Confirmation popup for deleting secrets.
+
+# Technical Overview
+Backend
+Node.js with Express.js
+
+MongoDB for data storage (secrets and users)
+
+Mongoose ORM
+
+Passport.js with passport-local-mongoose for user authentication
+
+Express-session for session management
+
+Connect-flash for flash messages
+
+Frontend
+EJS Templating Engine
+
+Bootstrap 5 and CSS for styling
+
+Security
+Passwords hashed & salted using Passport.js and passport-local-mongoose
+
+Secrets stored as array of strings inside each User document
+
+Protected routes using ensureAuthenticated middleware
+
+# Link: 
+https://secrets-app-vsec.onrender.com
