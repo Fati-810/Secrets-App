@@ -2,7 +2,7 @@
 
 Secrets App is a secure and simple web application where users can register, log in, and anonymously submit secrets. Users can also edit and delete their own secrets while viewing secrets submitted by others. The app provides a fun and private way to share thoughts anonymously, with a clean and responsive Bootstrap UI.
 
-# Features Overview (Behind the Scenes):
+# Features:
 
 🧑‍💻 User Management
 
@@ -38,7 +38,22 @@ Forms for register, login, submit, and edit.
 
 Confirmation popup for deleting secrets.
 
-# Technical Overview
+# Typical Workflow:
+
+User registers → User created with hashed password → redirected to login
+
+User logs in → Session started → redirected to /secrets
+
+User submits a secret → Added to their own secrets array
+
+Secrets page → Displays all secrets from all users
+
+Edit/Delete → Only owner of secret can edit/delete it
+
+Logout → Session cleared → redirected to /login
+
+# Technical Overview (Behind the Scenes):
+
 💻 Backend
 Node.js with Express.js
 
