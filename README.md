@@ -39,7 +39,7 @@ Forms for register, login, submit, and edit.
 Confirmation popup for deleting secrets.
 
 # Technical Overview
-Backend
+💻 Backend
 Node.js with Express.js
 
 MongoDB for data storage (secrets and users)
@@ -52,12 +52,12 @@ Express-session for session management
 
 Connect-flash for flash messages
 
-Frontend
+📐 Frontend
 EJS Templating Engine
 
 Bootstrap 5 and CSS for styling
 
-Security
+🔒 Security
 Passwords hashed & salted using Passport.js and passport-local-mongoose
 
 Secrets stored as array of strings inside each User document
