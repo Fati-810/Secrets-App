@@ -1,6 +1,6 @@
 # Secrest App
 
-Secrets App is a secure and simple web application where users can register, log in, and anonymously submit secrets. Users can also edit and delete their own secrets while viewing secrets submitted by others. The app provides a fun and private way to share thoughts anonymously, with a clean and responsive Bootstrap UI.
+Secrets App is a **secure** and **simple web application** where users can register, log in, and anonymously submit secrets. Users can also edit and delete their own secrets while viewing secrets submitted by others. The app provides a **fun** and **private** way to share thoughts **anonymously**, with a **clean** and **responsive** Bootstrap UI.
 
 # Features:
 
