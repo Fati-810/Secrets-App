@@ -55,29 +55,29 @@ Logout → Session cleared → redirected to /login
 # Technical Overview (Behind the Scenes):
 
 💻 Backend
-Node.js with Express.js
+Node.js with Express.js.
 
-MongoDB for data storage (secrets and users)
+MongoDB for data storage (secrets and users).
 
 Mongoose ORM
 
-Passport.js with passport-local-mongoose for user authentication
+Passport.js with passport-local-mongoose for user authentication.
 
-Express-session for session management
+Express-session for session management.
 
-Connect-flash for flash messages
+Connect-flash for flash messages.
 
 📐 Frontend
 EJS Templating Engine
 
-Bootstrap 5 and CSS for styling
+Bootstrap 5 and CSS for styling.
 
 🔒 Security
-Passwords hashed & salted using Passport.js and passport-local-mongoose
+Passwords hashed & salted using Passport.js and passport-local-mongoose.
 
-Secrets stored as array of strings inside each User document
+Secrets stored as array of strings inside each User document.
 
-Protected routes using ensureAuthenticated middleware
+Protected routes using ensureAuthenticated middleware.
 
 # Link: 
 https://secrets-app-vsec.onrender.com
