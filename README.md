@@ -4,7 +4,7 @@ Secrets App is a **secure** and **simple web application** where users can regis
 
 ## Features:
 
-🧑‍💻 User Management
+🧑‍💻 **User Management:**
 
 User Registration with email & password.
 
@@ -12,7 +12,7 @@ User Login with session-based authentication.
 
 Logout functionality.
 
-🔐 Secret Sharing
+🔐 **Secret Sharing:**
 
 Submit secrets anonymously after login.
 
@@ -22,13 +22,13 @@ Each user can edit and delete their own secrets.
 
 Secrets are stored privately in the user’s document in MongoDB.
 
-💬 Flash Messaging
+💬 **Flash Messaging:**
 
 Flash messages for success/failure in login, registration, secret submission, edit, delete, and logout.
 
 Auto-dismiss of flash messages after 5 seconds.
 
-🖼️ UI / UX
+🖼️ **UI / UX:**
 
 Responsive design using Bootstrap 5.
 
