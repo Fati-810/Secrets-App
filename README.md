@@ -40,26 +40,26 @@ Confirmation popup for deleting secrets.
 
 ## Typical Workflow:
 
-User registers → User created with hashed password → redirected to login
+User registers → User created with hashed password → redirected to login.
 
-User logs in → Session started → redirected to /secrets
+User logs in → Session started → redirected to /secrets.
 
-User submits a secret → Added to their own secrets array
+User submits a secret → Added to their own secrets array.
 
-Secrets page → Displays all secrets from all users
+Secrets page → Displays all secrets from all users.
 
-Edit/Delete → Only owner of secret can edit/delete it
+Edit/Delete → Only owner of secret can edit/delete it.
 
-Logout → Session cleared → redirected to /login
+Logout → Session cleared → redirected to /login.
 
 ## Technical Overview (Behind the Scenes):
 
-💻 Backend
+💻 **Backend:**
 Node.js with Express.js.
 
 MongoDB for data storage (secrets and users).
 
-Mongoose ORM
+Mongoose ORM.
 
 Passport.js with passport-local-mongoose for user authentication.
 
@@ -67,12 +67,12 @@ Express-session for session management.
 
 Connect-flash for flash messages.
 
-📐 Frontend
-EJS Templating Engine
+📐 **Frontend:**
+EJS Templating Engine.
 
 Bootstrap 5 and CSS for styling.
 
-🔒 Security
+🔒 **Security:**
 Passwords hashed & salted using Passport.js and passport-local-mongoose.
 
 Secrets stored as array of strings inside each User document.
